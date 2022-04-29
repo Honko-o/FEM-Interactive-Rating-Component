@@ -453,9 +453,9 @@ a {
   height: 40px;
   background-color: #121417;
   border-radius: 50%;
-  background-image: url("../../images/icon-star.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rate .rating__state__title {
   color: white;

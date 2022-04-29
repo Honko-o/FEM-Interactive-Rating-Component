@@ -37,9 +37,9 @@
         height: 40px;
         background-color: $blue-900;
         border-radius: 50%;
-        background-image: url("../../images/icon-star.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .rating__state__title {
         color: $neutral-white;
@@ -111,3 +111,4 @@
 
 
 // Desktop Sizes
+// No Need

@@ -2,6 +2,7 @@ let rateButtons = document.querySelectorAll("a[data-value]");
 let rateSubmit = document.querySelector(".rating__state__submit");
 let rateValue;
 
+// Rate Value Buttons Event Handlers
 rateButtons.forEach(el => {
     el.addEventListener("click", e => {
         rateButtons.forEach(el => el.id = "");
@@ -10,6 +11,7 @@ rateButtons.forEach(el => {
     });
 });
 
+// Submit Button
 rateSubmit.addEventListener("click", el => {
     let activeRate = document.getElementById("active");
     if (activeRate) {
