@@ -1,0 +1,8 @@
+@use './variables' as *;
+
+body {
+    font-size: $root-font-size;
+    font-family: 'Overpass', sans-serif;
+}
+// - Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+// - Weights: 400, 700

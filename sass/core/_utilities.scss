@@ -1,0 +1,37 @@
+/*
+    This Class Helps with
+    Center The Flex item vertically
+*/
+.flex-center-vertical {
+    align-self: center;
+}
+/*
+    This Class Sets Fixed Width to any Element
+*/
+.fit-content {
+    width: fit-content;
+}
+.fixed-width-300-medium {
+    @media (min-width: 991px) {
+        width: 300px;
+    }
+}
+.align-right {
+    margin-left: auto;
+    text-align: right;
+}
+.align-left {
+    margin-right: auto;
+    text-align: left;
+}
+.align-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}

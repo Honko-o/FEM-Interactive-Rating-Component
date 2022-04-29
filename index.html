@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./sass/main.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <main class="rate">
+    <!-- Rating state start -->
+    <div class="rating__state visible">
+      <div class="rating__state__star"></div>
+      <h1 class="rating__state__title">How did we do?</h1>
+      <p class="rating__state__description">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <ul class="rating__state__value">
+        <li>
+         <a href="#" data-value="1">1</a>
+        </li>
+        <li>
+          <a href="#" data-value="2">2</a>
+         </li>
+         <li>
+          <a href="#" data-value="3">3</a>
+         </li>
+         <li>
+          <a href="#" data-value="4">4</a>
+         </li>
+         <li>
+          <a href="#" data-value="5">5</a>
+         </li>
+      </ul>
+      <button class="rating__state__submit">Submit</button>
+    </div>
+    <!-- Rating state end -->
+    <!-- Thank you state start -->
+    <div class="thank__you align-center hidden">
+      <div class="thank__you__image">
+        <img src="./images/illustration-thank-you.svg" alt="">
+      </div>
+      <div class="thank__you__rate">You selected <span id="rate-number"></span> out of 5</div>
+      <h1 class="thank__you__title">Thank you!</h1>
+      <p class="thank__you__description">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+    </div>
+    <!-- Thank you state end -->
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>

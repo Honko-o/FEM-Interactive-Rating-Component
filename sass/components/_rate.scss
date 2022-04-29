@@ -1,0 +1,113 @@
+@use '../core/' as *;
+%boxSizing {
+    max-width: 360px;
+    padding: 2rem;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    background-color: $blue-700;
+    border-radius: 1rem;
+}
+// Mobile Sizes
+.rate {
+    .rating__state {
+        @extend %boxSizing;
+        
+        
+        .rating__state__submit {
+            display: block;
+            width: 100%;
+            background-color: $primary-orange;
+            color: $neutral-white;
+            border: none;
+            border-radius: 2rem;
+            padding: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: color 600ms, background-color 600ms;
+            &:hover {
+                background-color: $neutral-white;
+                color: $primary-orange;
+            }
+        }
+    }
+    .rating__state__star {
+        width: 40px;
+        height: 40px;
+        background-color: $blue-900;
+        border-radius: 50%;
+        background-image: url("../../images/icon-star.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .rating__state__title {
+        color: $neutral-white;
+    }
+    .rating__state__description {
+        color: $gray-600;
+        line-height: 1.6;
+    }
+    .rating__state__value {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5rem 0;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: $blue-900;
+            color: $gray-300;
+            border-radius: 50%;
+            transition: color 300ms, background-color 300ms;
+            &#active {
+                background: $gray-300;
+                color: $neutral-white;
+            }
+            &:not(#active) {
+                &:hover {
+                    background-color: $primary-orange;
+                    color: $neutral-white;
+                }
+            }
+        }
+    }
+    // Start Thank You
+    .thank__you {
+        @extend %boxSizing;
+        .thank__you__image {
+            img {
+                display: block;
+                margin: {
+                    left: auto;
+                    right: auto;
+                }
+            }
+        }
+    }
+    .thank__you__rate {
+        background: hsl(216, 12%, 8%);
+        color: $primary-orange;
+        padding: 0.75rem;
+        margin: {
+            top: 1.5rem;
+            bottom: 0;
+            left: auto;
+            right: auto;
+        }
+        border-radius: 2rem;
+        
+    }
+    .thank__you__title {
+        color: $neutral-white;
+    }
+    .thank__you__description {
+        color: $gray-600;
+        line-height: 1.6;
+    }
+}
+
+
+// Desktop Sizes
