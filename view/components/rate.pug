@@ -1,0 +1,22 @@
+//- Rating State Start
+main.rate 
+    - let itemsCount = 1;
+    //- Rating State Start
+    div(class="rating__state visible")
+        .rating__state__star: img(aria-hidden="true", src="./images/icon-star.svg", alt="")
+        h1.rating__state__title How did we do? 
+        p.rating__state__description Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        ul.rating__state__value
+           while itemsCount <= 5
+            li
+                a(href='#', data-value=itemsCount)= itemsCount++
+        button.rating__state__submit Submit
+    //- Rating State End
+    //- Thank You Start
+    div(class="thank__you align-center hidden")
+        .thank__you__image
+            img(aria-hidden="true", src="./images/illustration-thank-you.svg", alt="")
+        .thank__you__rate You selected #[span#rate-number] out of 5
+        h1.thank__you__title Thank you!
+        p.thank__you__description We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+    //- Thank You End
